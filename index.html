@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="logo.png"></a>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Precos</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li class="lg"><a href="#">Login</a></li>
+            </ul>
+            <div class="menu-icon">
+                <img src="menu.png">
+            </div>
+        </nav>
+        <main>
+            <div class="main_text">
+                <h1><b>Aumentar!</b> <strong>suas redes socias Marketing Digital</strong></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia facere impedit rem dicta tempore architecto perferendis natus. Dolor quidem quia nemo facilis autem? Iure, doloremque facilis assumenda laborum impedit sunt.</p>
+                <button>Junte-se a nos</button>
+            </div>
+            <div class="main_img">
+                <img src="nave.png">
+            </div>
+        </main>
+        
+    </div>
+    <script>
+        var menu = document.querySelector('nav ul');
+        var menuIcon = document.querySelector('nav .menu-icon');
+        var meuIconImg = document.querySelector('nav .menu-icon img');
+
+        menuIcon.addEventListener('click',()=>{
+            menu.classList.toggle('activo')
+            if(menuIconImg.getAttribute("src")== 'menu.png'){
+                menuIconImg.getAttribute("src","close.png");
+            }else{
+                menuIconImg.getAttribute("src","close.png");
+            }
+        })
+    </script>
+    
+</body>
+</html>
